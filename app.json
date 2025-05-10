@@ -8,6 +8,19 @@
       "reactServerFunctions": true
     },
     "name": "neptune",
-    "slug": "neptune"
+    "slug": "neptune",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "e7f2850c-ac37-476d-a868-81a741b362e3"
+      }
+    },
+    "owner": "karsongrady",
+    "ios": {
+      "bundleIdentifier": "com.neptune-app.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    }
   }
 }
