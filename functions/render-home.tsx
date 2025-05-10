@@ -1,12 +1,10 @@
-"use server";
-
 // This file runs in the server and can return server components.
-
+"use server";
 // Optionally: You can import "server-only" to ensure this file is never run on the client.
 import "server-only";
 
 import { Stack } from "expo-router";
-
+import React from "react";
 import { Image, Text, View } from "react-native";
 
 export async function renderHomeAsync() {
@@ -14,6 +12,9 @@ export async function renderHomeAsync() {
   console.log("Secret:", process.env.MY_SECRET);
 
   const res = await fetch("https://pokeapi.co/api/v2/pokemon/2");
+
+  // view the loading state for longer
+  await new Promise((resolve) => setTimeout(resolve, 5000));
 
   const json = await res.json();
 
