@@ -26,6 +26,9 @@
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
+    },
+    "web": {
+      "output": "single"
     }
   }
 }
