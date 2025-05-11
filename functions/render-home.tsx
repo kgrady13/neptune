@@ -11,10 +11,10 @@ export async function renderHomeAsync() {
   // Secrets can be used in the server.
   console.log("Secret:", process.env.MY_SECRET);
 
-  const res = await fetch("https://pokeapi.co/api/v2/pokemon/2");
+  const res = await fetch("https://pokeapi.co/api/v2/pokemon/1");
 
   // view the loading state for longer
-  await new Promise((resolve) => setTimeout(resolve, 5000));
+  // await new Promise((resolve) => setTimeout(resolve, 5000));
 
   const json = await res.json();
 
