@@ -4,9 +4,6 @@
     "plugins": [
       [
         "expo-router",
-        {
-          "origin": "https://neptune-azure.vercel.app"
-        }
       ]
     ],
     "experiments": {
