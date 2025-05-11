@@ -2,7 +2,12 @@
   "expo": {
     "scheme": "neptune",
     "plugins": [
-      "expo-router"
+      [
+        "expo-router",
+        {
+          "origin": "https://neptune-azure.vercel.app"
+        }
+      ]
     ],
     "experiments": {
       "reactServerFunctions": true
