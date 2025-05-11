@@ -32,5 +32,6 @@
     "patch-package": "^8.0.0",
     "@babel/core": "^7.20.0"
   },
+  "packageManager": "pnpm@10.10.0",
   "private": true
 }
