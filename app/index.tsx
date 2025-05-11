@@ -3,17 +3,19 @@
 // This route is a client component.
 import "client-only";
 
-import { StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, StyleSheet, View } from "react-native";
 import { renderHomeAsync } from "../functions/render-home";
+import { PokemonButton } from "../components/pokemon-button";
 import React from "react";
 
 export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-        <React.Suspense fallback={<Text>Loading...</Text>}>
+        <React.Suspense fallback={ <ActivityIndicator />}>
           {renderHomeAsync()}
         </React.Suspense>
+        <PokemonButton />
       </View>
     </View>
   );
