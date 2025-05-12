@@ -3,7 +3,10 @@
     "scheme": "neptune",
     "plugins": [
       [
-        "expo-router"
+        "expo-router",
+        {
+          "origin": "https://neptune-azure.vercel.app"
+        }
       ]
     ],
     "experiments": {
@@ -12,7 +15,6 @@
     "name": "neptune",
     "slug": "neptune",
     "extra": {
-      "router": {},
       "eas": {
         "projectId": "e7f2850c-ac37-476d-a868-81a741b362e3"
       }
